@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="easyJava" />
         <module name="EasyBBS" />
         <module name="easybbs-web" />
+        <module name="easyJavaSpring" />
         <module name="easybbs-common" />
         <module name="easybbs-admin" />
       </profile>
@@ -15,6 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="easyJavaSpring" options="-parameters" />
       <module name="easybbs-common" options="-parameters" />
       <module name="easybbs-web" options="-parameters" />
     </option>

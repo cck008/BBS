@@ -2,7 +2,7 @@
 <configuration scan="true" scanPeriod="10 minutes">
     <appender name="stdot" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <patten>%d{yyyy-MM-dd HH:mm:ss,GMT+8} {%p}{%c}{%M}{%L}-> %m%n</patten>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss,GMT+8} {%p}{%c}{%M}{%L}-> %m%n</pattern>
         </layout>
     </appender>
 
@@ -13,7 +13,7 @@
     <property name="LOG_FILE_NAME" value="easybbs-admin.log"/>
 
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${log.path}/${LOG_FOLDER}/${LOG_NAME}</file>
+        <file>${log.path}/${LOG_FOLDER}/${LOG_FILE_NAME}</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <FileNamePattern>${log.path}/${LOG_FOLDER}/${LOG_FILE_NAME}.%d{yyyyMMdd}.%i</FileNamePattern>
             <cleanHistoryOnStart>true</cleanHistoryOnStart>
@@ -36,3 +36,4 @@
     </root>
 
 </configuration>
+
