@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
+
+
     @RequestMapping("/test")
     public String test(){
         int random = getRandom(1, 100);
