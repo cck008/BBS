@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="easyJava" />
+        <module name="EasyBBS" />
+        <module name="easybbs-web" />
+        <module name="easyJavaSpring" />
+        <module name="easybbs-common" />
+        <module name="easybbs-admin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EasyBBS" target="1.8" />
+      <module name="easybbs-admin" target="1.8" />
+      <module name="easybbs-common" target="1.8" />
+      <module name="easybbs-java" target="1.8" />
+      <module name="easybbs-web" target="1.8" />
+      <module name="easyJava" target="1.8" />
+      <module name="easyJavaSpring" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="easyJavaSpring" options="-parameters" />
+      <module name="easybbs-common" options="-parameters" />
+      <module name="easybbs-web" options="-parameters" />
+    </option>
+  </component>
+</project>
