@@ -1,0 +1,101 @@
+2023-03-30 22:27:04 {INFO}{com.easybbs.EasybbsAdminApplication}{logStarting}{55}-> Starting EasybbsAdminApplication using Java 1.8.0_333 on DESKTOP-TQKT47A with PID 21800 (D:\BBS\easybbs\easybbs-java\easybbs-admin\target\classes started by 86151 in D:\BBS\easybbs\easybbs-java)
+2023-03-30 22:27:04 {DEBUG}{com.easybbs.EasybbsAdminApplication}{logStarting}{56}-> Running with Spring Boot v2.6.1, Spring v5.3.13
+2023-03-30 22:27:04 {INFO}{com.easybbs.EasybbsAdminApplication}{logStartupProfileInfo}{635}-> No active profile set, falling back to default profiles: default
+2023-03-30 22:27:04 {DEBUG}{org.springframework.boot.SpringApplication}{load}{663}-> Loading source class com.easybbs.EasybbsAdminApplication
+2023-03-30 22:27:04 {DEBUG}{org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext}{prepareRefresh}{629}-> Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67080771
+2023-03-30 22:27:04 {DEBUG}{org.springframework.beans.factory.support.DefaultListableBeanFactory}{getSingleton}{225}-> Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-30 22:27:04 {DEBUG}{org.springframework.beans.factory.support.DefaultListableBeanFactory}{getSingleton}{225}-> Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2023-03-30 22:27:04 {DEBUG}{org.springframework.context.annotation.ClassPathBeanDefinitionScanner}{scanCandidateComponents}{435}-> Identified candidate component class: file [D:\BBS\easybbs\easybbs-java\easybbs-admin\target\classes\com\easybbs\controller\TestController.class]
+2023-03-30 22:27:05 {DEBUG}{org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration}{registerBeanDefinitions}{184}-> Searching for mappers annotated with @Mapper
+2023-03-30 22:27:05 {DEBUG}{org.springframework.beans.factory.support.DefaultListableBeanFactory}{getSingleton}{225}-> Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2023-03-30 22:27:05 {DEBUG}{org.springframework.boot.autoconfigure.AutoConfigurationPackages}{get}{196}-> @EnableAutoConfiguration was declared on a class in the package 'com.easybbs'. Automatic @Repository and @Entity scanning is enabled.
+2023-03-30 22:27:05 {DEBUG}{org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration}{registerBeanDefinitions}{196}-> Using auto-configuration base package 'com.easybbs'
+2023-03-30 22:27:05 {WARN}{org.mybatis.spring.mapper.ClassPathMapperScanner}{doScan}{166}-> No MyBatis mapper was found in '[com.easybbs]' package. Please check your configuration.
+2023-03-30 22:27:05 {ERROR}{org.springframework.boot.SpringApplication}{reportFailure}{819}-> Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration.restTemplateBuilderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.easybbs.EasybbsAdminApplication.main(EasybbsAdminApplication.java:9)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/transaction/ReactiveTransactionManager
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.transaction.ReactiveTransactionManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 37 common frames omitted
+2023-03-30 22:27:05 {DEBUG}{org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext}{doClose}{1049}-> Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67080771, started on Thu Mar 30 22:27:04 CST 2023
+2023-03-30 22:27:05 {WARN}{org.springframework.boot.SpringApplication}{handleRunFailure}{791}-> Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:862)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:850)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:837)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.easybbs.EasybbsAdminApplication.main(EasybbsAdminApplication.java:9)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/transaction/ReactiveTransactionManager
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.transaction.ReactiveTransactionManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 25 common frames omitted

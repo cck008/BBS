@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BBS.iml" filepath="$PROJECT_DIR$/.idea/BBS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybbs/EasyBBS.iml" filepath="$PROJECT_DIR$/easybbs/EasyBBS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybbs/easyJava/easyJava.iml" filepath="$PROJECT_DIR$/easybbs/easyJava/easyJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybbs/easyJavaSpring/easyJavaSpring.iml" filepath="$PROJECT_DIR$/easybbs/easyJavaSpring/easyJavaSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybbs/easybbs-java/easybbs-admin/easybbs-admin.iml" filepath="$PROJECT_DIR$/easybbs/easybbs-java/easybbs-admin/easybbs-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybbs/easybbs-java/easybbs-common/easybbs-common.iml" filepath="$PROJECT_DIR$/easybbs/easybbs-java/easybbs-common/easybbs-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybbs/easybbs-java/easybbs-java.iml" filepath="$PROJECT_DIR$/easybbs/easybbs-java/easybbs-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybbs/easybbs-java/easybbs-web/easybbs-web.iml" filepath="$PROJECT_DIR$/easybbs/easybbs-java/easybbs-web/easybbs-web.iml" />
+    </modules>
+  </component>
+</project>
