@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="easyJava" />
         <module name="EasyBBS" />
+        <module name="spring-boot-easy" />
+        <module name="easybbs-admin" />
+        <module name="easyJava" />
         <module name="easybbs-web" />
         <module name="easyJavaSpring" />
         <module name="easybbs-common" />
-        <module name="easybbs-admin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
       <module name="easybbs-web" target="1.8" />
       <module name="easyJava" target="1.8" />
       <module name="easyJavaSpring" target="1.8" />
+      <module name="spring-boot-easy" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -29,6 +31,7 @@
       <module name="easyJavaSpring" options="-parameters" />
       <module name="easybbs-common" options="-parameters" />
       <module name="easybbs-web" options="-parameters" />
+      <module name="spring-boot-easy" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,6 +1,5 @@
 package com.easyjava.bean;
 
-import sun.reflect.FieldInfo;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -127,6 +126,9 @@ public class TableInfo {
     public void setHaveBigDecimal(Boolean haveBigDecimal) {
         this.haveBigDecimal = haveBigDecimal;
     }
+
+//    public void setFieldList(List<com.easyjava.bean.FieldInfo> fieldInfoList) {
+//    }
 }
 
 

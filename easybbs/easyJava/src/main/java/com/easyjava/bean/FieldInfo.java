@@ -3,7 +3,7 @@ package com.easyjava.bean;
 /**
  * 字段信息
  */
-public class FieldInfo {
+public class FieldInfo{
     /**
      * 字段名称
      */

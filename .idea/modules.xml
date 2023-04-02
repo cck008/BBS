@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/easybbs/easybbs-java/easybbs-common/easybbs-common.iml" filepath="$PROJECT_DIR$/easybbs/easybbs-java/easybbs-common/easybbs-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/easybbs/easybbs-java/easybbs-java.iml" filepath="$PROJECT_DIR$/easybbs/easybbs-java/easybbs-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/easybbs/easybbs-java/easybbs-web/easybbs-web.iml" filepath="$PROJECT_DIR$/easybbs/easybbs-java/easybbs-web/easybbs-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybbs/spring-boot-easy/spring-boot-easy.iml" filepath="$PROJECT_DIR$/easybbs/spring-boot-easy/spring-boot-easy.iml" />
     </modules>
   </component>
 </project>
