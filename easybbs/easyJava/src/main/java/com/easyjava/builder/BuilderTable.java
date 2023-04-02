@@ -116,11 +116,15 @@ public class BuilderTable {
     private static void readFieldInfo(TableInfo tableInfo) {
         PreparedStatement ps = null;
         ResultSet fieldResult = null;
-//        List<FieldInfo> fieldInfoList = new ArrayList();
         List<FieldInfo> fieldInfoList = new ArrayList();
+
         try {
             ps = conn.prepareStatement(String.format(SQL_SHOW_TABLE_FIELDS, tableInfo.getTableName()));
             fieldResult = ps.executeQuery();
+
+            Boolean haveDateTime = false;
+            Boolean haveDate = false;
+            Boolean haveBigDecimal = false;
             // 遍历查询结果
             while (fieldResult.next()) {
                 String field = fieldResult.getString("field");
@@ -146,19 +150,14 @@ public class BuilderTable {
 
 
                 if (ArrayUtils.contains(Constants.SQL_DATE_TIME_TYPES, type)) {
-                    tableInfo.setHaveDateTime(true);
-                } else {
-                    tableInfo.setHaveDateTime(false);
+                    haveDateTime = true;
                 }
                 if (ArrayUtils.contains(Constants.SQL_DATE_TYPES, type)) {
-                    tableInfo.setHaveDate(true);
-                } else {
-                    tableInfo.setHaveDate(false);
+                    haveDate = true;
                 }
+
                 if (ArrayUtils.contains(Constants.SQL_DECIMAL_TYPE, type)) {
-                    tableInfo.setHaveBigDecimal(true);
-                } else {
-                    tableInfo.setHaveBigDecimal(false);
+                    haveBigDecimal = true;
                 }
 
 //                logger.info("javaType:{}", fieldInfo.getJavaType());
@@ -167,6 +166,9 @@ public class BuilderTable {
 
 
             }
+            tableInfo.setHaveDateTime(haveDateTime);
+            tableInfo.setHaveDate(haveDate);
+            tableInfo.setHaveBigDecimal(haveBigDecimal);
             tableInfo.setFieldList(fieldInfoList);
 
         } catch (Exception e) {

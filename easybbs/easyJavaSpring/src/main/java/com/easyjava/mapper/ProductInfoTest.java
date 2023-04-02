@@ -1,4 +1,4 @@
-package com.easyjava.entity.po;
+package com.easyjava.mapper;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -8,7 +8,7 @@ import java.util.Date;
  * @author 
  * 商品信息
  */
-public class ProductInfo implements Serializable {
+public class ProductInfoTest implements Serializable {
     /**
      * 自增ID
      */

@@ -1,19 +1,21 @@
 package com.easyjava.mapper;
 
-import com.easyjava.entity.po.ProductInfo;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProductInfoDAO {
     int deleteByPrimaryKey(Integer id);
 
-    int insert(ProductInfo record);
+    int insert(ProductInfoTest record);
 
-    int insertSelective(ProductInfo record);
+    int insertSelective(ProductInfoTest record);
 
-    ProductInfo selectByPrimaryKey(Integer id);
+    ProductInfoTest selectByPrimaryKey(Integer id);
 
-    int updateByPrimaryKeySelective(ProductInfo record);
+    int updateByPrimaryKeySelective(ProductInfoTest record);
 
-    int updateByPrimaryKey(ProductInfo record);
+    int updateByPrimaryKey(ProductInfoTest record);
+
+
+
 }

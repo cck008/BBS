@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.easyjava.mapper.ProductInfoDAO">
-  <resultMap id="BaseResultMap" type="com.easyjava.entity.po.ProductInfo">
+  <resultMap id="BaseResultMap" type="com.easyjava.mapper.ProductInfoTest">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="company_id" jdbcType="VARCHAR" property="companyId" />
     <result column="code" jdbcType="VARCHAR" property="code" />
@@ -28,7 +28,7 @@
     delete from tb_product_info
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.easyjava.entity.po.ProductInfo">
+  <insert id="insert" parameterType="com.easyjava.mapper.ProductInfoTest">
     insert into tb_product_info (id, company_id, code, 
       product_name, price, sku_type, 
       color_type, create_time, create_date, 
@@ -38,7 +38,7 @@
       #{colorType,jdbcType=TINYINT}, #{createTime,jdbcType=TIMESTAMP}, #{createDate,jdbcType=DATE}, 
       #{stock,jdbcType=BIGINT}, #{status,jdbcType=TINYINT})
   </insert>
-  <insert id="insertSelective" parameterType="com.easyjava.entity.po.ProductInfo">
+  <insert id="insertSelective" parameterType="com.easyjava.mapper.ProductInfoTest">
     insert into tb_product_info
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -111,7 +111,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.easyjava.entity.po.ProductInfo">
+  <update id="updateByPrimaryKeySelective" parameterType="com.easyjava.mapper.ProductInfoTest">
     update tb_product_info
     <set>
       <if test="companyId != null">
@@ -147,7 +147,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.easyjava.entity.po.ProductInfo">
+  <update id="updateByPrimaryKey" parameterType="com.easyjava.mapper.ProductInfoTest">
     update tb_product_info
     set company_id = #{companyId,jdbcType=VARCHAR},
       code = #{code,jdbcType=VARCHAR},

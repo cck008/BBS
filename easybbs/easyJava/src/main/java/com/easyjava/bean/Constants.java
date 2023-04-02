@@ -4,13 +4,15 @@ import com.easyjava.utils.PropertiesUtils;
 
 // 需要定义的参数
 public class Constants {
+
+    public static String AUTHOR_COMMENT;
     public static Boolean IGNORE_TABLE_PERFIX;
 
     public static String SUFFIX_BEAN_PARAM;
 
-    private static String PATH_JAVA = "java";
+    public static String PATH_JAVA = "java";
 
-    private static String PATH_RESOURCES = "resources";
+    public static String PATH_RESOURCES = "resources";
 
     public static String PATH_BASE;
 
@@ -18,9 +20,11 @@ public class Constants {
 
     public static String PACKAGE_BASE;
 
-    private static String PACKAGE_PO;
+    public static String PACKAGE_PO;
 
     static {
+        AUTHOR_COMMENT = PropertiesUtils.getString("author.comment");
+
         IGNORE_TABLE_PERFIX = Boolean.valueOf(PropertiesUtils.getString("ignore.table.prefix"));
         SUFFIX_BEAN_PARAM = PropertiesUtils.getString("suffix.bean.param");
 
